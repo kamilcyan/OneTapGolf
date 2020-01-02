@@ -61,14 +61,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Ball\CameraFollow.cs" />
+    <Compile Include="Assets\Ball\HittingBall.cs" />
+    <Compile Include="Assets\Ball\objectBall.cs" />
     <Compile Include="Assets\Hole\HoleSpawn.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/git/OneTapGolf/OneTapGolf/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/git/OneTapGolf/OneTapGolf/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/git/OneTapGolf/OneTapGolf/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
