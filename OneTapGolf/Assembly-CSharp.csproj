@@ -61,9 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Ball\ballSpawn.cs" />
     <Compile Include="Assets\Ball\HittingBall.cs" />
-    <Compile Include="Assets\Ball\objectBall.cs" />
     <Compile Include="Assets\Hole\HoleSpawn.cs" />
+    <Compile Include="Assets\Hole\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Reference Include="UnityEditor.StandardEvents">

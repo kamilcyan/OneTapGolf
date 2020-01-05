@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public Text scoreText;
     public Text gameOverText;
 
+
     float playerScore = 0;
     private void Update()
     {

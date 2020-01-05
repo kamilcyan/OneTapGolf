@@ -6,6 +6,7 @@ public class HoleSpawn : MonoBehaviour {
 
     public GameObject objectHole;
     public float spawnX = 6f;
+    public bool objectDestroyed = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,17 @@ public class HoleSpawn : MonoBehaviour {
         Vector3 spawnPos = transform.position + new Vector3(random, 0f, 0f);
         Instantiate(objectHole, spawnPos, Quaternion.identity);
 
-        Invoke("Spawn", Random.Range(-1, 10));
+        //Invoke("Spawn", Random.Range(-1, 10));
     }
+
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Debug.Log(hitInfo.name);
+        Destroy(objectHole);
+
+        objectDestroyed = true;
+        Spawn();
+    }
+
+
 }
