@@ -1565,7 +1565,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1589593702}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0604577978ad2c479fcabde5d8bafa5, type: 3}
   m_Name: 
@@ -1597,6 +1597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86f4eab92e3e4b41b931c4df6216e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectHole: {fileID: 1771071163364052, guid: e5cef8391e2348e4bb9ec3592da6d529, type: 2}
+  spawnX: 6
+  objectDestroyed: 0
 --- !u!1 &1611157727
 GameObject:
   m_ObjectHideFlags: 0

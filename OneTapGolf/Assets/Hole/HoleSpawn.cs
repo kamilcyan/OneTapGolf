@@ -22,15 +22,4 @@ public class HoleSpawn : MonoBehaviour {
 
         //Invoke("Spawn", Random.Range(-1, 10));
     }
-
-    void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        Debug.Log(hitInfo.name);
-        Destroy(objectHole);
-
-        objectDestroyed = true;
-        Spawn();
-    }
-
-
 }

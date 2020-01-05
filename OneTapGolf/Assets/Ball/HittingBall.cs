@@ -22,7 +22,6 @@ public class HittingBall : MonoBehaviour {
     void Update()
     {
         Timer();
-        
     }
 
     void Timer()
@@ -41,19 +40,16 @@ public class HittingBall : MonoBehaviour {
 
     void Hit(float speedUper)
     {
-        
         speed += speedUper;
         rb.velocity = transform.right * speed;
-
     }
-
-
-
+    
     void OnTriggerEnter2D(Collider2D collider)
     {
         Destroy(objectBall);
         Create();
     }
+
     void Create()
     {
         Instantiate(objectBall, spawnPos.position, spawnPos.rotation);
