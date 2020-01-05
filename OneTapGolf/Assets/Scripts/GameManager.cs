@@ -8,11 +8,14 @@ public class GameManager : MonoBehaviour {
     public Text scoreText;
     public Text gameOverText;
 
-    int playerScore = 0;
-
+    float playerScore = 0;
+    private void Update()
+    {
+        AddScore();
+    }
     public void AddScore()
     {
-        playerScore++;
+        playerScore+=Time.deltaTime;
         scoreText.text = playerScore.ToString();
     }
 

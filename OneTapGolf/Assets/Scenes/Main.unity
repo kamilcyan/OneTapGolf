@@ -1382,6 +1382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1315447785}
   objectBall: {fileID: 1550578328632254, guid: ca4a3958e4ba3d947a6efb1334f6e969, type: 2}
+  speed: 10
+  rb: {fileID: 811664718}
+  timer: 0
 --- !u!212 &811664721
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1449,7 +1452,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 811664717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1cae15803f30db4da3c6be717683844, type: 3}
   m_Name: 
