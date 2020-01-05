@@ -21,6 +21,4 @@ public class ballSpawn : MonoBehaviour {
     {
         Instantiate(objectBall, spawnPos.position, spawnPos.rotation);
     }
-
-   
 }

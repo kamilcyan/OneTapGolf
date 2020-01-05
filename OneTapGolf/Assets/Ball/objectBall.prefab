@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4928871504810274}
   - component: {fileID: 212590665229366266}
+  - component: {fileID: 114641070396127144}
   - component: {fileID: 114219349998320458}
   - component: {fileID: 58478530969886876}
   - component: {fileID: 50498656561442664}
@@ -65,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516711502954242}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -12.93, y: -2.89, z: 0}
+  m_LocalPosition: {x: -12.6, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4161884394173254}
@@ -123,6 +124,19 @@ MonoBehaviour:
   speed: 10
   rb: {fileID: 50498656561442664}
   timer: 0
+  spawnPos: {fileID: 4928871504810274}
+--- !u!114 &114641070396127144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516711502954242}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784f9950362d4aa4783716a6d4bb47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectBall: {fileID: 1516711502954242}
   spawnPos: {fileID: 4928871504810274}
 --- !u!212 &212590665229366266
 SpriteRenderer:

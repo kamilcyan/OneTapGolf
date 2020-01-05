@@ -123,6 +123,7 @@ MonoBehaviour:
   speed: 10
   rb: {fileID: 50195230037792088}
   timer: 0
+  spawnPos: {fileID: 0}
 --- !u!212 &212250167674805894
 SpriteRenderer:
   m_ObjectHideFlags: 1

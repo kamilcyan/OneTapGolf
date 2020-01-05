@@ -6,7 +6,6 @@ public class HoleSpawn : MonoBehaviour {
 
     public GameObject objectHole;
     public float spawnX = 6f;
-    public bool objectDestroyed = false;
 
 	// Use this for initialization
 	void Start () {

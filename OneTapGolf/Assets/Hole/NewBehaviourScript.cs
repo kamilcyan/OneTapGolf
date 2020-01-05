@@ -5,23 +5,23 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour {
 
     public GameObject objectHole;
-    public float spawnX = 6f;
+    public float spawnX = 10f;
     public bool objectDestroyed = false;
 
     void Start()
     {
-        Spawn();
+        
     }
 
-    void OnTriggerEnter2D(Collider2D hitInfo)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (hitInfo)
+        if (collider)
         {
             Destroyer();
         }
     }
 
-    // Update is called once per frame
+        // Update is called once per frame
     void Update () {
 
     }
@@ -29,6 +29,7 @@ public class NewBehaviourScript : MonoBehaviour {
     void Destroyer()
     {
         Destroy(this.gameObject);
+
         Spawn();
     }
 

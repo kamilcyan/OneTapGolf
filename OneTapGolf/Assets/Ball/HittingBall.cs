@@ -13,7 +13,6 @@ public class HittingBall : MonoBehaviour {
     public Transform spawnPos;
 
 
-
     void Start()
     {
     }
