@@ -5,6 +5,7 @@ using UnityEngine;
 public class ballSpawn : MonoBehaviour {
 
     public GameObject objectBall;
+    public Transform spawnPos;
 
     // Use this for initialization
     void Start () {
@@ -13,17 +14,13 @@ public class ballSpawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
 
     void Create()
     {
-        Vector3 spawnPos = transform.position; ;
-        Instantiate(objectBall, spawnPos, Quaternion.identity);
+        Instantiate(objectBall, spawnPos.position, spawnPos.rotation);
     }
 
-    void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        Create();
-    }
+   
 }

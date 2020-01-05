@@ -1752,7 +1752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784f9950362d4aa4783716a6d4bb47fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectBall: {fileID: 1823457370702446, guid: 2c0d75e853367934587dabcb68554a9a, type: 2}
+  objectBall: {fileID: 1516711502954242, guid: c86a5fdafc81b0648bf97a0a576e4bc8, type: 2}
+  spawnPos: {fileID: 4928871504810274, guid: c86a5fdafc81b0648bf97a0a576e4bc8, type: 2}
 --- !u!4 &2075380714
 Transform:
   m_ObjectHideFlags: 0
