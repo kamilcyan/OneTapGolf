@@ -65,9 +65,10 @@
     <Compile Include="Assets\Ball\HittingBall.cs" />
     <Compile Include="Assets\Ball\ifIsGrounded.cs" />
     <Compile Include="Assets\Hole\HoleSpawn.cs" />
-    <Compile Include="Assets\Hole\NewBehaviourScript.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\SpawnPosition.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/git/OneTapGolf/OneTapGolf/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

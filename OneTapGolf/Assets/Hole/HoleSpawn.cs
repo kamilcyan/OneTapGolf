@@ -11,8 +11,7 @@ public class HoleSpawn : MonoBehaviour {
 	void Start () {
         Spawn();
 	}
-
-    // Update is called once per frame
+    
     void Spawn()
     {
         float random = Random.Range(-spawnX, spawnX);

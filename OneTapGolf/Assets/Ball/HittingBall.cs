@@ -24,7 +24,7 @@ public class HittingBall : MonoBehaviour {
         Timer();
     }
 
-    void Timer()
+    public void Timer()
     {
         ifIsGrounded = GameObject.FindObjectOfType<ifIsGrounded>();
 
@@ -48,14 +48,13 @@ public class HittingBall : MonoBehaviour {
     
     void OnTriggerEnter2D(Collider2D collider)
     {
+        Debug.Log("collision");
         gameManager = GameObject.FindObjectOfType<GameManager>();
         if (collider.name != "Shredder" && collider.name != "Shredder (1)")
         {
-            
             gameManager.AddScore();
             Destroy(objectBall);
             gameManager.Create();
-            
         }
         else
             gameManager.PlayerLost();
