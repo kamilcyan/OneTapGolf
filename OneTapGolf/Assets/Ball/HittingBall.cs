@@ -48,7 +48,6 @@ public class HittingBall : MonoBehaviour {
     
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("collision");
         gameManager = GameObject.FindObjectOfType<GameManager>();
         if (collider.name != "Shredder" && collider.name != "Shredder (1)")
         {
