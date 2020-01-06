@@ -10,10 +10,12 @@ public class GameManager : MonoBehaviour {
     public GameObject objectBall;
     public Transform spawnPos;
     public GameObject objectHole;
-    public HittingBall hittingBall;
+    GameManager gameManager;
+    NewBehaviourScript newBehaviourScript;
 
+    
+    int playerScore = 0;
 
-    float playerScore = 0;
     private void Update()
     {
 
@@ -26,16 +28,14 @@ public class GameManager : MonoBehaviour {
 
     public void PlayerLost()
     {
-        objectBall = hittingBall.GetComponent<GameObject>();
-        if()
         gameOverText.enabled = true;
         Time.timeScale = 0;
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    public void Create()
     {
-         
-        Debug.Log(collider.name);
-        AddScore();
+        newBehaviourScript = GameObject.FindObjectOfType<NewBehaviourScript>();
+        Instantiate(objectBall, spawnPos.position, spawnPos.rotation);
+        newBehaviourScript.Spawn();
     }
 }

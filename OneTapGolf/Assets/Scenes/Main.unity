@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 532498597}
   - component: {fileID: 532498596}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 803574579}
   - component: {fileID: 803574582}
   - component: {fileID: 803574581}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,8 +1600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectHole: {fileID: 1771071163364052, guid: e5cef8391e2348e4bb9ec3592da6d529, type: 2}
-  spawnX: 6
-  objectDestroyed: 0
+  spawnX: 10
 --- !u!1 &1611157727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,12 +1784,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb5faab74d9e164e972f45e95e7ffc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 4161884394173254, guid: c86a5fdafc81b0648bf97a0a576e4bc8, type: 2}
-  objectBall: {fileID: 1516711502954242, guid: c86a5fdafc81b0648bf97a0a576e4bc8, type: 2}
+  firePoint: {fileID: 0}
+  objectBall: {fileID: 0}
   speed: 10
-  rb: {fileID: 2075380716}
+  rb: {fileID: 0}
   timer: 0
-  spawnPos: {fileID: 2075380714}
+  spawnPos: {fileID: 0}
 --- !u!50 &2075380716
 Rigidbody2D:
   serializedVersion: 4

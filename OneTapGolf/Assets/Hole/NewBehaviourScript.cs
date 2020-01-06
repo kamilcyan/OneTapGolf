@@ -5,8 +5,8 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour {
 
     public GameObject objectHole;
-    public float spawnX = 10f;
-    public bool objectDestroyed = false;
+    public float spawnX = 6f;
+    HittingBall hittingBall;
 
     void Start()
     {
@@ -30,14 +30,16 @@ public class NewBehaviourScript : MonoBehaviour {
     {
         Destroy(this.gameObject);
 
-        Spawn();
+        //Spawn();
     }
 
-    void Spawn()
+    public void Spawn()
     {
+        hittingBall = GameObject.FindObjectOfType<HittingBall>();
         float random = Random.Range(-spawnX, spawnX);
         Vector3 spawnPos = transform.position + new Vector3(random, 0f, 0f);
         Instantiate(objectHole, spawnPos, Quaternion.identity);
+        hittingBall.Update();
     }
 
 }

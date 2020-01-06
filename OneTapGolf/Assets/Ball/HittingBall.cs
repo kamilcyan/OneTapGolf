@@ -11,26 +11,29 @@ public class HittingBall : MonoBehaviour {
     public Rigidbody2D rb;
     public float timer = 0f;
     public Transform spawnPos;
-
+    GameManager gameManager;
+    ifIsGrounded ifIsGrounded;
 
     void Start()
     {
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         Timer();
     }
 
     void Timer()
     {
+        ifIsGrounded = GameObject.FindObjectOfType<ifIsGrounded>();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             timer = Time.time;
 
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space)&& ifIsGrounded.isGrounded)
         {
             float timer2 = Time.time - timer;
             Hit(timer2);
@@ -39,18 +42,24 @@ public class HittingBall : MonoBehaviour {
 
     void Hit(float speedUper)
     {
-        speed += speedUper;
+        speed = speedUper * 10;
         rb.velocity = transform.right * speed;
     }
     
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Destroy(objectBall);
-        Create();
+        gameManager = GameObject.FindObjectOfType<GameManager>();
+        if (collider.name != "Shredder" && collider.name != "Shredder (1)")
+        {
+            
+            gameManager.AddScore();
+            Destroy(objectBall);
+            gameManager.Create();
+            
+        }
+        else
+            gameManager.PlayerLost();
     }
 
-    void Create()
-    {
-        Instantiate(objectBall, spawnPos.position, spawnPos.rotation);
-    }
+    
 }

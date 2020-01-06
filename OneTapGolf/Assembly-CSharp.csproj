@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Ball\ballSpawn.cs" />
     <Compile Include="Assets\Ball\HittingBall.cs" />
+    <Compile Include="Assets\Ball\ifIsGrounded.cs" />
     <Compile Include="Assets\Hole\HoleSpawn.cs" />
     <Compile Include="Assets\Hole\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
